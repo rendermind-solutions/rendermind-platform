@@ -1,26 +1,146 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  /* --- FUENTES RENDEMIND --- */
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-space);
+  --font-mono: var(--font-jetbrains);
+
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: calc(var(--radius) - 1px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 2px);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  /* Rendermind High-Tech Palette */
+  --background: oklch(0.12 0.01 222);
+  /* #0B0E14 - Deep Obsidian */
+  --foreground: oklch(0.95 0.01 222);
+  /* #F1F1F1 - Ghost White */
+
+  --card: oklch(0.15 0.02 222);
+  /* #0D1117 - Card Background */
+  --card-foreground: oklch(0.95 0.01 222);
+
+  --popover: oklch(0.12 0.01 222);
+  --popover-foreground: oklch(0.95 0.01 222);
+
+  --primary: oklch(0.85 0.22 195);
+  /* #00F5FF - Electric Cyan */
+  --primary-foreground: oklch(0.12 0.01 222);
+
+  --secondary: oklch(0.25 0.02 222);
+  /* #1E2228 - Accent Slate */
+  --secondary-foreground: oklch(0.95 0.01 222);
+
+  --muted: oklch(0.2 0.02 222);
+  --muted-foreground: oklch(0.75 0.01 222);
+  /* Subimos de 0.65 a 0.75 */
+  /* #8E949E - Tech Silver */
+
+  --accent: oklch(0.25 0.05 195);
+  /* Darker Cyan for accents */
+  --accent-foreground: oklch(0.85 0.22 195);
+
+  --destructive: oklch(0.55 0.18 25);
+  --destructive-foreground: oklch(0.95 0.01 222);
+
+  --border: oklch(0.22 0.02 222);
+  /* Subtle UI borders */
+  --input: oklch(0.22 0.02 222);
+  --ring: oklch(0.85 0.22 195);
+
+  --radius: 0.25rem;
+
+  --sidebar: oklch(0.14 0.02 222);
+  --sidebar-foreground: oklch(0.95 0.01 222);
+  --sidebar-primary: oklch(0.85 0.22 195);
+  --sidebar-primary-foreground: oklch(0.12 0.01 222);
+  --sidebar-accent: oklch(0.22 0.02 222);
+  --sidebar-accent-foreground: oklch(0.85 0.22 195);
+  --sidebar-border: oklch(0.22 0.02 222);
+  --sidebar-ring: oklch(0.85 0.22 195);
+}
+
+/* Forzamos que el .dark sea idéntico o ligeramente más profundo */
+.dark {
+  --background: oklch(0.1 0.01 222);
+  --card: oklch(0.13 0.02 222);
+  --border: oklch(0.18 0.02 222);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    /* Técnica de Grid Pattern del Manual */
+    background-image: radial-gradient(oklch(0.22 0.02 222) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading tracking-tighter;
+  }
+
+  code {
+    @apply font-mono text-primary;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  @keyframes infinite-scroll {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-infinite-scroll {
+    animation: infinite-scroll 40s linear infinite;
+  }
 }
