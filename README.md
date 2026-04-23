@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rendermind.io | Next-Gen Creative Engineering
 
-## Getting Started
+![Rendermind Header](https://raw.githubusercontent.com/tu-usuario/rendermind/main/public/header-preview.png)
 
-First, run the development server:
+> **The Infrastructure for High-Performance Visual Experiences.**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Rendermind is a specialized B2B graphics infrastructure studio. We bridge the gap between AI orchestration and complex rendering requirements, providing the proprietary cores and technical expertise needed to manipulate pixels at scale.
+
+## 🚀 Core Solutions
+
+- **Custom Creative Builders:** Embeddable graphic and video editors (Canvas/WebGL) for SaaS platforms.
+- **Automated Asset Pipelines:** Mass-scale image and video generation via API/Headless workflows.
+- **AI Visual Orchestration:** Deterministic translation of LLM intent into structured, pixel-perfect design schemas.
+- **Hybrid Rendering Engines:** High-throughput pipelines leveraging both GPU acceleration and robust CPU frameworks (Remotion/FFmpeg).
+
+## 🛠 Tech Stack
+
+Our infrastructure is built to be framework-agnostic and high-performance:
+
+- **Frontend:** Next.js, TypeScript, Tailwind CSS (v4), Shadcn/UI.
+- **Graphics:** WebGL, Canvas API, Fabric.js, PixiJS.
+- **Video:** Remotion, FFmpeg, Headless Chromium.
+- **Orchestration:** LangGraph, Node.js, Custom AI Adapters.
+
+## 🎨 Brand Identity
+
+This repository follows the **Rendermind Brand Guidelines v1.0**:
+- **Primary Color:** Electric Cyan (`#00F5FF`)
+- **Background:** Deep Obsidian (`#0B0E14`)
+- **Typography:** Space Grotesk (Headings) & Inter (Body).
+
+## 📂 Project Structure
+
+```text
+├── src/
+│   ├── app/            # Next.js App Router
+│   ├── components/     # High-fidelity UI Components
+│   │   ├── landing/    # Sales-focused sections (Hero, Workflow, Tech)
+│   │   └── ui/         # Base Shadcn/ui primitives
+│   ├── lib/            # Shared utilities and hooks
+│   └── styles/         # Globals.css with OKLCH color tokens
+├── public/             # Static assets and brand marks
+└── BUSINESS_STRATEGY.md # Internal spec for service delivery
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🤝 Technical Inquiry
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+We don't just write code; we solve the hardest visual challenges. If your company needs robust graphics infrastructure:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Founder & Lead Engineer**: [Agustín - LinkedIn](https://www.linkedin.com/in/agustin-la-valla/)
+- **Website**: rendermind.io
+- **Schedule a Call**: Technical Discovery Form
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+##
+Developed with precision for the next generation of creative tools.
