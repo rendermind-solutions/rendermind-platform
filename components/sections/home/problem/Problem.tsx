@@ -3,27 +3,27 @@ import { Clock3, Layers3, ServerCog, TriangleAlert } from "lucide-react";
 const challenges = [
 	{
 		icon: <Clock3 className="text-primary" size={18} />,
-		title: "It eats the roadmap",
+		title: "The editor is never just the editor",
 		description:
-			"Teams start with a simple editor prototype and end up buried in canvas state, uploads, undo stacks, and timeline logic for months.",
+			"Teams start with a simple prototype and quickly inherit canvas state, undo and redo, uploads, templates, previews, and export logic.",
 	},
 	{
 		icon: <Layers3 className="text-primary" size={18} />,
-		title: "The real product is bigger than the UI",
+		title: "Rendering is not just a button",
 		description:
-			"Image and video products need templates, asset management, previews, exports, permissions, and background jobs before customers will trust them.",
+			"Image and video outputs need workers, queues, retries, storage, previews, FFmpeg or Remotion logic, and error handling around the happy path.",
 	},
 	{
 		icon: <ServerCog className="text-primary" size={18} />,
-		title: "Rendering becomes an operations problem",
+		title: "Media workflows expand into the stack",
 		description:
-			"Queues, retries, storage, FFmpeg pipelines, and scaling workers quietly become a second product your team now has to run.",
+			"Once customers expect templates, captions, versions, approvals, and server-side exports, the workflow spans frontend, backend, storage, and operations.",
 	},
 	{
 		icon: <TriangleAlert className="text-primary" size={18} />,
-		title: "AI alone does not ship the workflow",
+		title: "AI still needs structured media flows",
 		description:
-			"Text-to-video, transcript search, and automated generation only matter when prompts, templates, editing, and rendering are connected end to end.",
+			"Prompts, transcripts, captions, review states, templates, and rendering only become useful when they are connected inside one product workflow.",
 	},
 ];
 
@@ -34,11 +34,11 @@ export default function Problem() {
 				<div className="max-w-3xl">
 					<p className="mb-4 font-mono text-sm uppercase tracking-[0.3em] text-primary">Problem</p>
 					<h2 className="text-4xl font-heading font-bold tracking-tighter md:text-5xl">
-						Every quarter spent building this in-house delays product revenue and burns expensive engineering time.
+						Media workflows look simple until they become your roadmap.
 					</h2>
 					<p className="mt-6 text-xl leading-relaxed text-muted-foreground">
-						The hard part is not drawing pixels on a screen. The hard part is shipping a polished product customers
-						trust, keeping it fast under load, and connecting AI workflows to real media operations.
+						The challenge is not getting pixels on a screen. The challenge is keeping editors, templates, rendering,
+						and AI extensions coherent inside a real product without turning them into a second platform your team has to maintain.
 					</p>
 				</div>
 
@@ -55,11 +55,10 @@ export default function Problem() {
 				</div>
 
 				<div className="mt-10 border border-border/60 bg-background/60 p-6">
-						<p className="text-lg leading-relaxed text-foreground">
-							High-value products do not win because they built more rendering plumbing. They win because they launch
-							faster, charge sooner, and keep improving the customer workflow.
-						</p>
-					</div>
+					<p className="text-lg leading-relaxed text-foreground">
+						Most teams should spend their engineering time on core product logic, distribution, and customer value, not on recreating media infrastructure from scratch.
+					</p>
+				</div>
 			</div>
 		</section>
 	);

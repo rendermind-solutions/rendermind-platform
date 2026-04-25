@@ -3,24 +3,24 @@ import { Captions, SearchCode, Sparkles } from "lucide-react";
 const capabilities = [
 	{
 		icon: <Sparkles className="text-primary" size={20} />,
-		title: "Generate content automatically",
+		title: "Generate first drafts from prompts or structured inputs",
 		description:
-			"Create first drafts from prompts, campaign data, or structured inputs so users stop starting from a blank canvas every time.",
-		value: "Reduce production time for repeatable image and video workflows while increasing output capacity.",
+			"Use prompts, campaign data, product data, or scripts to populate templates and create the first version of an asset faster.",
+		value: "Useful when AI is part of a broader review and rendering workflow, not a standalone gimmick.",
 	},
 	{
 		icon: <Captions className="text-primary" size={20} />,
-		title: "Search video by meaning, not by scrubbing timelines",
+		title: "Transcribe videos and generate multilingual captions",
 		description:
-			"Use semantic search on transcripts to find the exact moment, quote, or topic inside long-form video.",
-		value: "Make large media libraries easier to navigate, reuse, package, and monetize.",
+			"Add transcript and caption workflows to video products so teams can review, publish, and repurpose content more efficiently.",
+		value: "Works well as part of clip generation, publishing, and localization workflows.",
 	},
 	{
 		icon: <SearchCode className="text-primary" size={20} />,
-		title: "Turn AI into a usable product workflow",
+		title: "Prototype semantic search and AI-assisted review flows",
 		description:
-			"Connect prompts, templates, editing, and rendering so users can generate, review, and export in one flow inside your app.",
-		value: "Ship AI features that improve activation, retention, and perceived product value instead of becoming a side experiment.",
+			"Connect transcripts, vector search, prompts, templates, review states, and rendering when you want AI to support a real media workflow.",
+		value: "Best positioned today as a custom AI extension built on top of the core editor and rendering modules.",
 	},
 ];
 
@@ -30,13 +30,13 @@ export default function AICapabilities() {
 			<div className="mx-auto max-w-7xl">
 				<div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
 					<div className="lg:sticky lg:top-24">
-						<p className="mb-4 font-mono text-sm uppercase tracking-[0.3em] text-primary">AI Capabilities</p>
+						<p className="mb-4 font-mono text-sm uppercase tracking-[0.3em] text-primary">AI-ready Workflows</p>
 						<h2 className="text-4xl font-heading font-bold tracking-tighter md:text-5xl">
-							AI is only valuable when it upgrades the workflow customers are paying for.
+							AI-ready workflows that connect prompts, media, and rendering.
 						</h2>
 						<p className="mt-6 text-xl leading-relaxed text-muted-foreground">
-							The point is not to say you added AI. The point is to help customers create faster, find the right media
-							faster, and complete more work inside your product without adding operational complexity for your team.
+							The value is not adding an AI label. The value is connecting AI to real media workflows: generating
+							first drafts, filling templates, transcribing videos, searching transcripts, and moving from prompt to review to render.
 						</p>
 					</div>
 

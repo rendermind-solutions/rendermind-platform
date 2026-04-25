@@ -3,56 +3,56 @@ import { Blocks, ImagePlay, Workflow } from "lucide-react";
 const pillars = [
 	{
 		icon: <ImagePlay className="text-primary" size={20} />,
-		title: "Embeddable Editor",
+		title: "Embeddable editors",
 		description:
-			"Add a polished image and video editing layer inside your product without building the whole interaction model from scratch.",
+			"Graphic and video editor modules can be embedded into React apps and adapted to the product workflow you are building.",
 		points: [
-			"Canvas and timeline experiences designed for production products, not internal demos",
-			"Embed the full editor or only the modules needed for the first premium workflow",
-			"Keep your own auth, billing, and product shell",
+			"Graphic editor SDK for templates, text, images, SVGs, and customization flows",
+			"Video editor SDK for structured video creation, captions, clips, and timeline-based flows",
+			"Integrated into your existing UX instead of replacing it",
 		],
 	},
 	{
 		icon: <Blocks className="text-primary" size={20} />,
-		title: "Rendering API",
+		title: "Rendering pipelines",
 		description:
-			"Run exports, previews, thumbnails, and background jobs without turning your team into full-time render pipeline operators.",
+			"Use image, PDF, and video rendering modules to generate assets server-side without building the entire rendering layer yourself.",
 		points: [
-			"API-driven image and video rendering",
-			"Built for async jobs, retries, and scale",
-			"Reliable output for products where delivery quality matters",
+			"Image and PDF rendering from structured templates",
+			"Remotion-based video rendering for composition-driven outputs",
+			"Template exports, previews, and async render jobs adapted to your stack",
 		],
 	},
 	{
 		icon: <Workflow className="text-primary" size={20} />,
-		title: "Templates + Automation System",
+		title: "AI-ready media workflows",
 		description:
-			"Turn repeatable content production into a system your users, team, or AI workflows can run with consistency.",
+			"Transcription, captions, semantic transcript search, and prompt-to-template workflows can be added where they make sense.",
 		points: [
-			"Brand-safe templates that support repeatable, higher-value delivery",
-			"Bulk generation from forms, data, or prompts",
-			"Fewer manual steps between request, review, and finished asset",
+			"Multilingual transcription and caption generation",
+			"Semantic video search as an early module or custom AI extension",
+			"Prompt, template, review, and render flows built around your product logic",
 		],
 	},
 ];
 
 const integrationNotes = [
-	"React-ready SDK for teams shipping fast inside an existing app",
-	"API-first architecture for rendering, automation, and orchestration",
-	"Modular rollout so you can land one high-value workflow first and expand later",
+	"Start with one workflow instead of the whole stack",
+	"Select only the modules your implementation actually needs",
+	"Custom integration around your existing product shell, auth, and data model",
 ];
 
 export default function Solution() {
 	return (
 		<section className="mx-auto max-w-7xl px-6 py-24" id="solution">
 			<div className="max-w-3xl">
-				<p className="mb-4 font-mono text-sm uppercase tracking-[0.3em] text-primary">Solution</p>
+				<p className="mb-4 font-mono text-sm uppercase tracking-[0.3em] text-primary">What Rendermind Provides</p>
 				<h2 className="text-4xl font-heading font-bold tracking-tighter md:text-5xl">
-					Three product modules to help you launch faster and sell at a higher level.
+					Reusable media modules, integrated around your product.
 				</h2>
 				<p className="mt-6 text-xl leading-relaxed text-muted-foreground">
-					Use the full stack or start with the module blocking the highest-value workflow today. Rendermind fits inside
-					an existing app so your team can move faster without compromising the product experience.
+					Rendermind is not a generic editor you force into your app. We help you select, adapt, and integrate the
+					media modules your workflow actually needs, using production-tested SDKs plus custom engineering.
 				</p>
 			</div>
 
@@ -77,7 +77,7 @@ export default function Solution() {
 			</div>
 
 			<div className="mt-10 border border-primary/20 bg-primary/5 p-6">
-					<p className="font-mono text-xs uppercase tracking-[0.3em] text-primary">Developer clarity</p>
+				<p className="font-mono text-xs uppercase tracking-[0.3em] text-primary">Implementation model</p>
 				<div className="mt-4 grid gap-4 md:grid-cols-3">
 					{integrationNotes.map((note) => (
 						<p key={note} className="text-base leading-relaxed text-foreground">
