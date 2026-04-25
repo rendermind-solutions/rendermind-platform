@@ -34,11 +34,11 @@ export default function Problem() {
 				<div className="max-w-3xl">
 					<p className="mb-4 font-mono text-sm uppercase tracking-[0.3em] text-primary">Problem</p>
 					<h2 className="text-4xl font-heading font-bold tracking-tighter md:text-5xl">
-						Every month spent building this in-house is a month you are not selling it.
+						Every quarter spent building this in-house delays product revenue and burns expensive engineering time.
 					</h2>
 					<p className="mt-6 text-xl leading-relaxed text-muted-foreground">
-						The hard part is not getting pixels on a screen. The hard part is shipping a product customers can use
-						every day without letting editor complexity and rendering infrastructure consume your team.
+						The hard part is not drawing pixels on a screen. The hard part is shipping a polished product customers
+						trust, keeping it fast under load, and connecting AI workflows to real media operations.
 					</p>
 				</div>
 
@@ -56,8 +56,8 @@ export default function Problem() {
 
 				<div className="mt-10 border border-border/60 bg-background/60 p-6">
 						<p className="text-lg leading-relaxed text-foreground">
-							Most teams do not need a bigger media engineering org. They need a faster route to launch, feedback,
-							and revenue.
+							High-value products do not win because they built more rendering plumbing. They win because they launch
+							faster, charge sooner, and keep improving the customer workflow.
 						</p>
 					</div>
 			</div>

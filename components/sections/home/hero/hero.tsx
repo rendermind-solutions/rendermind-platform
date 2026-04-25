@@ -3,16 +3,16 @@ import { ArrowRight, Boxes, Code2, Sparkles } from "lucide-react";
 
 const highlights = [
 	{
-		title: "Ship before the quarter ends",
-		description: "Turn a 6 to 12 month internal build into a faster path to launch and revenue.",
+		title: "Launch a premium workflow sooner",
+		description: "Turn a long internal build into a faster route to market with a product your customers can pay for.",
 	},
 	{
-		title: "Protect the roadmap",
-		description: "Stop pulling your team into editor bugs, render queues, and infrastructure work customers never see.",
+		title: "Keep senior engineers on core IP",
+		description: "Stop tying up expensive product teams in editor bugs, render jobs, and infrastructure work that slows everything else down.",
 	},
 	{
-		title: "Win with product, not plumbing",
-		description: "Keep your UX, pricing, and workflow logic. We handle the media stack underneath it.",
+		title: "Sell a better product experience",
+		description: "Keep your UX, pricing, and workflow logic. Rendermind powers the media layer underneath it.",
 	},
 ];
 
@@ -26,19 +26,20 @@ export default function Hero() {
 				<div>
 					<div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-2 font-mono text-sm text-primary mb-8">
 						<Sparkles size={14} />
-						<span>For SaaS, AI products, marketing platforms, and agencies</span>
+						<span>For AI products, SaaS platforms, media tools, and agencies</span>
 					</div>
 
 					<h1 className="mb-8 text-5xl font-heading font-bold leading-[1.02] tracking-tighter md:text-7xl">
-						Stop burning months on media infrastructure. Launch editing in{" "}
+						Launch an AI-powered creation product without spending months building the media stack.
+						{" "}
 						<span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary to-cyan-300">
-							weeks, not months.
+							Go live in weeks, not quarters.
 						</span>
 					</h1>
 
 					<p className="max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-2xl">
-						Rendermind gives your team an embeddable editor, a rendering API, and template automation so you can
-						sell image and video workflows without hiring a team just to build and maintain them.
+						Rendermind gives your team an embeddable editor, rendering infrastructure, template automation, and
+						AI-ready workflows so you can launch a serious image or video product without building the entire media layer in-house.
 					</p>
 
 					<div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -67,7 +68,7 @@ export default function Hero() {
 					<div className="flex items-center justify-between border-b border-border/60 pb-4">
 						<div>
 							<p className="font-mono text-xs uppercase tracking-[0.3em] text-primary">API + SDK Ready</p>
-							<h2 className="mt-2 text-2xl font-heading font-bold">Built to plug into a real product fast</h2>
+							<h2 className="mt-2 text-2xl font-heading font-bold">Built for teams shipping revenue-critical workflows</h2>
 						</div>
 						<div className="hidden h-12 w-12 items-center justify-center border border-primary/20 bg-primary/10 text-primary md:flex">
 							<Boxes size={20} />
@@ -102,17 +103,17 @@ await renderJob({
 						<div className="border border-border/60 bg-background/70 p-4">
 							<Code2 className="mb-3 text-primary" size={18} />
 							<p className="text-sm font-semibold">Composable SDK</p>
-							<p className="mt-2 text-sm leading-relaxed text-muted-foreground">Embed the whole editor or only the modules that help you close the use case faster.</p>
+							<p className="mt-2 text-sm leading-relaxed text-muted-foreground">Embed the full experience or only the modules needed for your highest-value workflow.</p>
 						</div>
 						<div className="border border-border/60 bg-background/70 p-4">
 							<Boxes className="mb-3 text-primary" size={18} />
 							<p className="text-sm font-semibold">Modular architecture</p>
-							<p className="mt-2 text-sm leading-relaxed text-muted-foreground">Keep your app shell, billing, permissions, and business logic exactly where they already live.</p>
+							<p className="mt-2 text-sm leading-relaxed text-muted-foreground">Keep your app shell, permissions, data model, and business logic exactly where they already live.</p>
 						</div>
 						<div className="border border-border/60 bg-background/70 p-4">
 							<Sparkles className="mb-3 text-primary" size={18} />
-							<p className="text-sm font-semibold">AI-ready workflows</p>
-							<p className="mt-2 text-sm leading-relaxed text-muted-foreground">Turn prompts, search, templates, and rendering into one workflow users will actually pay for.</p>
+							<p className="text-sm font-semibold">AI-native workflows</p>
+							<p className="mt-2 text-sm leading-relaxed text-muted-foreground">Turn prompts, search, templates, and rendering into one premium workflow users will actually adopt.</p>
 						</div>
 					</div>
 				</div>

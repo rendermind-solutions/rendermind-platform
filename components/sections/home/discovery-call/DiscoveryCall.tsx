@@ -9,30 +9,30 @@ export default function DiscoveryCall() {
 				<div>
 					<p className="mb-4 font-mono text-sm uppercase tracking-[0.3em] text-primary">Closing CTA</p>
 					<h2 className="text-4xl font-heading font-bold tracking-tighter md:text-5xl">
-						If media infrastructure is not your business, stop funding it like it is.
+						If media infrastructure is not your differentiator, stop investing in it like it is.
 					</h2>
 					<p className="mt-6 text-xl leading-relaxed text-muted-foreground">
-						We help teams ship the first workflow fast: the editor users touch, the rendering pipeline behind it,
-						and the automation layer that makes the whole thing worth buying.
+						We help teams ship the first valuable workflow fast: the editor users touch, the rendering layer behind it,
+						and the AI-enabled automation that makes the product feel meaningfully better.
 					</p>
 
 					<div className="mt-10 space-y-4 border border-border/60 bg-card/40 p-6">
 						<div>
 							<p className="text-sm font-semibold text-foreground">What we cover in the first call</p>
 							<p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-								What to embed, what to render server-side, and the shortest path to a launch customers can pay for.
+								What to embed, what to render server-side, and the shortest path to a launch customers can pay premium pricing for.
 							</p>
 						</div>
 						<div>
 							<p className="text-sm font-semibold text-foreground">Best fit for</p>
 							<p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-								Startups, SaaS teams, AI builders, and agencies that need to ship creation workflows without hiring a dedicated media infrastructure team.
+								AI builders, SaaS teams, media platforms, and agencies that need to ship a differentiated creation workflow without hiring a dedicated media infrastructure team.
 							</p>
 						</div>
 						<div>
 							<p className="text-sm font-semibold text-foreground">Integration style</p>
 							<p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-								API-first and SDK-ready, with modular pieces you can slot into an existing app and launch in stages.
+								API-first and SDK-ready, with modular pieces you can slot into an existing app and roll out in stages.
 							</p>
 						</div>
 					</div>

@@ -9,13 +9,13 @@ const steps = [
 		number: "02",
 		title: "Connect templates and workflows",
 		description:
-			"Define templates, variables, assets, permissions, and automations around the first workflow you want customers using.",
+			"Define templates, variables, assets, permissions, and automations around the first high-value workflow you want customers using.",
 	},
 	{
 		number: "03",
 		title: "Render, search, and scale",
 		description:
-			"Run background exports, semantic search, and AI-assisted generation through the same production-ready infrastructure as adoption grows.",
+			"Run background exports, semantic search, and AI-assisted generation through the same production-ready infrastructure as usage and revenue grow.",
 	},
 ];
 
@@ -28,8 +28,8 @@ export default function HowItWorks() {
 					From integration to launch in three steps.
 				</h2>
 				<p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-muted-foreground">
-					Start with the workflow closest to revenue now. Expand into a broader editing and automation platform after
-					it is already live.
+					Start with the workflow closest to revenue now. Expand into a broader creation and automation platform after
+					it is already live and validated.
 				</p>
 			</div>
 

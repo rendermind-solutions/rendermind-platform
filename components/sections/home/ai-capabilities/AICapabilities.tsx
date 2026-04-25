@@ -5,22 +5,22 @@ const capabilities = [
 		icon: <Sparkles className="text-primary" size={20} />,
 		title: "Generate content automatically",
 		description:
-			"Create first drafts from prompts, campaign data, or structured inputs so users stop starting from a blank canvas.",
-		value: "Reduce production time for ads, social posts, and repeatable video content.",
+			"Create first drafts from prompts, campaign data, or structured inputs so users stop starting from a blank canvas every time.",
+		value: "Reduce production time for repeatable image and video workflows while increasing output capacity.",
 	},
 	{
 		icon: <Captions className="text-primary" size={20} />,
-		title: "Search video with meaning, not timestamps",
+		title: "Search video by meaning, not by scrubbing timelines",
 		description:
 			"Use semantic search on transcripts to find the exact moment, quote, or topic inside long-form video.",
-		value: "Make large media libraries faster to navigate, reuse, and monetize.",
+		value: "Make large media libraries easier to navigate, reuse, package, and monetize.",
 	},
 	{
 		icon: <SearchCode className="text-primary" size={20} />,
-		title: "Build AI-powered workflows into the product",
+		title: "Turn AI into a usable product workflow",
 		description:
-			"Connect prompts, templates, and rendering so users can generate, review, and export in one flow inside your app.",
-		value: "Ship AI features that increase activation instead of becoming a side experiment.",
+			"Connect prompts, templates, editing, and rendering so users can generate, review, and export in one flow inside your app.",
+		value: "Ship AI features that improve activation, retention, and perceived product value instead of becoming a side experiment.",
 	},
 ];
 
@@ -32,11 +32,11 @@ export default function AICapabilities() {
 					<div className="lg:sticky lg:top-24">
 						<p className="mb-4 font-mono text-sm uppercase tracking-[0.3em] text-primary">AI Capabilities</p>
 						<h2 className="text-4xl font-heading font-bold tracking-tighter md:text-5xl">
-							AI is only valuable when it shortens work and improves the product.
+							AI is only valuable when it upgrades the workflow customers are paying for.
 						</h2>
 						<p className="mt-6 text-xl leading-relaxed text-muted-foreground">
-							The point is not to add an AI tab. The point is to help customers create faster, find the right media
-							faster, and finish work with fewer steps.
+							The point is not to say you added AI. The point is to help customers create faster, find the right media
+							faster, and complete more work inside your product without adding operational complexity for your team.
 						</p>
 					</div>
 
