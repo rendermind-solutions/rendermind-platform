@@ -30,11 +30,11 @@ export default function ServicesMethodology() {
 
 			<div className="mt-20 p-12 border border-primary/20 bg-primary/5 rounded-sm text-center">
 				<h4 className="text-2xl font-heading font-bold mb-4">Why Rendermind?</h4>
-				<p className="max-w-3xl mx-auto text-muted-foreground text-lg font-light mb-8">
-					Unlike generalist agencies, we are **specialists in creative engineering**. We have already solved
-					the context-loss, the memory leaks, and the rendering bottlenecks. You aren't paying for our
-					learning curve; you are paying for our results.
-				</p>
+					<p className="max-w-3xl mx-auto text-muted-foreground text-lg font-light mb-8">
+						Unlike generalist agencies, we are **specialists in creative engineering**. We have already solved
+						the context-loss, the memory leaks, and the rendering bottlenecks. You aren&apos;t paying for our
+						learning curve; you are paying for our results.
+					</p>
 			</div>
 		</section>
 	);

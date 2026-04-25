@@ -27,7 +27,7 @@ export default function WorkflowPreview() {
             How we solve the visual gap
           </h2>
           <p className="text-muted-foreground text-lg font-sans">
-            We don't just write code; we deploy infrastructure that bridges AI and Graphics.
+            We don&apos;t just write code; we deploy infrastructure that bridges AI and Graphics.
           </p>
         </div>
 

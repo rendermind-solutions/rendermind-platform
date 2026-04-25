@@ -1,17 +1,22 @@
-import { AboutCore, DiscoveryCall, Hero, ServicesMethodology, TechnicalExcellence, UseCases, ValueProposition, WorkflowPreview } from "@/components/sections/home"
-import Metrics from "@/components/sections/home/metrics/Metrics";
+import {
+  AICapabilities,
+  DiscoveryCall,
+  Hero,
+  HowItWorks,
+  Problem,
+  Solution,
+  UseCases,
+} from "@/components/sections/home";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <AboutCore />
-      <WorkflowPreview />
-      <TechnicalExcellence />
-      <ValueProposition />
-      <ServicesMethodology />
-      <Metrics />
+      <Problem />
+      <Solution />
+      <AICapabilities />
       <UseCases />
+      <HowItWorks />
       <DiscoveryCall />
     </>
   );

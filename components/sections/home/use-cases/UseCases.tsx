@@ -1,39 +1,43 @@
-import { Target, MonitorPlay, ShoppingCart, Layout } from "lucide-react";
+import { Bot, BriefcaseBusiness, MonitorPlay, PanelsTopLeft } from "lucide-react";
 
 export default function UseCases() {
 	const cases = [
 		{
-			icon: <Target />,
-			title: "AdTech & Dynamic Creative",
-			problem: "Creating thousands of localized ad variations manually is impossible to scale.",
-			solution: "Automated pipelines that generate brand-consistent banners and graphics via API."
+			icon: <Bot />,
+			title: "AI video tools",
+			problem: "You need prompt-to-video, transcript search, and exports in one product experience.",
+			solution: "Launch AI-assisted creation without building the editor, timeline, asset system, and render backend from zero."
 		},
 		{
 			icon: <MonitorPlay />,
-			title: "Creative & Video Platforms", // Cambiado para ser más inclusivo
-			problem: "Users want in-app editing, but building a web-based editor is a technical nightmare.",
-			solution: "Embeddable timeline and preview engines with frame-perfect server-side export."
+			title: "Marketing automation platforms",
+			problem: "Your customers want branded content generation tied to campaigns, data, and approvals.",
+			solution: "Use templates, variables, and background rendering to generate images and videos at scale."
 		},
 		{
-			icon: <ShoppingCart />,
-			title: "E-commerce & POD Personalization",
-			problem: "Customers need to see high-fidelity previews of their custom products before buying.",
-			solution: "Real-time configurators that generate high-resolution, print-ready files automatically." // Quitamos "3D"
+			icon: <PanelsTopLeft />,
+			title: "Content SaaS",
+			problem: "Users expect in-app editing and exports, but media infrastructure keeps pushing the roadmap out.",
+			solution: "Add editing, reusable templates, and automated rendering as a product feature instead of a side project."
 		},
 		{
-			icon: <Layout />,
-			title: "AI-Driven Design Tools",
-			problem: "LLMs generate ideas, but they can't arrange pixels into professional layouts.",
-			solution: "A bridge between AI intent and graphical reality using our intelligent layout engine."
+			icon: <BriefcaseBusiness />,
+			title: "Agencies and service teams",
+			problem: "Production gets stuck in repetitive revisions, asset versioning, and export bottlenecks.",
+			solution: "Standardize delivery with shared templates, guided editing, and faster turnaround for client work."
 		}
 	];
 
 	return (
-		<section className="py-24 px-6 max-w-7xl mx-auto">
-			<div className="mb-16">
-				<h2 className="text-4xl md:text-5xl font-heading font-bold tracking-tighter mb-4">Vertical Applications.</h2>
-				<p className="text-muted-foreground text-xl font-light max-w-2xl">
-					From marketing automation to pro-level creative suites, we provide the infrastructure.
+		<section className="mx-auto max-w-7xl px-6 py-24" id="use-cases">
+			<div className="mb-16 max-w-3xl">
+				<p className="mb-4 font-mono text-sm uppercase tracking-[0.3em] text-primary">Use Cases</p>
+				<h2 className="mb-4 text-4xl font-heading font-bold tracking-tighter md:text-5xl">
+					Built for teams selling creative workflows.
+				</h2>
+				<p className="text-xl leading-relaxed text-muted-foreground">
+					When editing and rendering are part of your product or service, the fastest way to close revenue is to stop
+					building infrastructure and start shipping workflows customers will actually pay for.
 				</p>
 			</div>
 
@@ -46,11 +50,11 @@ export default function UseCases() {
 						<h4 className="text-2xl font-heading font-bold mb-6">{item.title}</h4>
 						<div className="space-y-4">
 							<div>
-								<span className="text-[10px] uppercase text-red-500/70 font-bold tracking-widest block mb-1">The Problem</span>
+								<span className="text-[10px] uppercase text-red-500/70 font-bold tracking-widest block mb-1">What they need</span>
 								<p className="text-muted-foreground text-lg font-light leading-snug">{item.problem}</p>
 							</div>
 							<div className="pt-4 border-t border-border/50">
-								<span className="text-[10px] uppercase text-primary font-bold tracking-widest block mb-1">The Solution</span>
+								<span className="text-[10px] uppercase text-primary font-bold tracking-widest block mb-1">What Rendermind unlocks</span>
 								<p className="text-foreground text-lg font-light leading-snug">{item.solution}</p>
 							</div>
 						</div>
