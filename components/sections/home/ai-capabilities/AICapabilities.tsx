@@ -5,22 +5,22 @@ const capabilities = [
 		icon: <Sparkles className="text-primary" size={20} />,
 		title: "Generate content automatically",
 		description:
-			"Create first drafts from prompts, campaign data, or structured inputs so users spend less time building assets by hand.",
-		value: "Reduce setup time for ads, social posts, and repeatable video content.",
+			"Create first drafts from prompts, campaign data, or structured inputs so users stop starting from a blank canvas.",
+		value: "Reduce production time for ads, social posts, and repeatable video content.",
 	},
 	{
 		icon: <Captions className="text-primary" size={20} />,
 		title: "Search video with meaning, not timestamps",
 		description:
 			"Use semantic search on transcripts to find the exact moment, quote, or topic inside long-form video.",
-		value: "Turn large media libraries into something customers can actually reuse.",
+		value: "Make large media libraries faster to navigate, reuse, and monetize.",
 	},
 	{
 		icon: <SearchCode className="text-primary" size={20} />,
 		title: "Build AI-powered workflows into the product",
 		description:
-			"Connect prompts, templates, and rendering so users can generate, review, and export in one flow.",
-		value: "Ship useful AI features without creating a separate tool your users have to learn.",
+			"Connect prompts, templates, and rendering so users can generate, review, and export in one flow inside your app.",
+		value: "Ship AI features that increase activation instead of becoming a side experiment.",
 	},
 ];
 
@@ -32,11 +32,11 @@ export default function AICapabilities() {
 					<div className="lg:sticky lg:top-24">
 						<p className="mb-4 font-mono text-sm uppercase tracking-[0.3em] text-primary">AI Capabilities</p>
 						<h2 className="text-4xl font-heading font-bold tracking-tighter md:text-5xl">
-							AI features that save time and create new product value.
+							AI is only valuable when it shortens work and improves the product.
 						</h2>
 						<p className="mt-6 text-xl leading-relaxed text-muted-foreground">
-							The goal is not to say you have AI. The goal is to help customers create content faster, search media
-							better, and automate work they would otherwise do by hand.
+							The point is not to add an AI tab. The point is to help customers create faster, find the right media
+							faster, and finish work with fewer steps.
 						</p>
 					</div>
 

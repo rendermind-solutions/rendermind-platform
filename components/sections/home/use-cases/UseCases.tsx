@@ -2,42 +2,42 @@ import { Bot, BriefcaseBusiness, MonitorPlay, PanelsTopLeft } from "lucide-react
 
 export default function UseCases() {
 	const cases = [
-		{
-			icon: <Bot />,
-			title: "AI video tools",
-			problem: "You need prompt-to-video, transcript search, and exports in one product experience.",
-			solution: "Launch AI-assisted creation without building the editor, timeline, asset system, and render backend from zero."
-		},
-		{
-			icon: <MonitorPlay />,
-			title: "Marketing automation platforms",
-			problem: "Your customers want branded content generation tied to campaigns, data, and approvals.",
-			solution: "Use templates, variables, and background rendering to generate images and videos at scale."
-		},
-		{
-			icon: <PanelsTopLeft />,
-			title: "Content SaaS",
-			problem: "Users expect in-app editing and exports, but media infrastructure keeps pushing the roadmap out.",
-			solution: "Add editing, reusable templates, and automated rendering as a product feature instead of a side project."
-		},
-		{
-			icon: <BriefcaseBusiness />,
-			title: "Agencies and service teams",
-			problem: "Production gets stuck in repetitive revisions, asset versioning, and export bottlenecks.",
-			solution: "Standardize delivery with shared templates, guided editing, and faster turnaround for client work."
-		}
-	];
+			{
+				icon: <Bot />,
+				title: "AI video tools",
+				problem: "You need prompt-to-video, transcript search, and exports in one product experience.",
+				solution: "Launch AI-assisted creation without spending the next two quarters building the editor, timeline, asset system, and render backend."
+			},
+			{
+				icon: <MonitorPlay />,
+				title: "Marketing automation platforms",
+				problem: "Your customers want branded content generation tied to campaigns, data, and approvals.",
+				solution: "Use templates, variables, and background rendering to generate images and videos at scale without growing a production team."
+			},
+			{
+				icon: <PanelsTopLeft />,
+				title: "Content SaaS",
+				problem: "Users expect in-app editing and exports, but media infrastructure keeps pushing the roadmap out.",
+				solution: "Add editing, reusable templates, and automated rendering as a product feature instead of another delayed roadmap promise."
+			},
+			{
+				icon: <BriefcaseBusiness />,
+				title: "Agencies and service teams",
+				problem: "Production gets stuck in repetitive revisions, asset versioning, and export bottlenecks.",
+				solution: "Standardize delivery with shared templates, guided editing, and faster turnaround so your margin does not disappear in production."
+			}
+		];
 
 	return (
 		<section className="mx-auto max-w-7xl px-6 py-24" id="use-cases">
 			<div className="mb-16 max-w-3xl">
 				<p className="mb-4 font-mono text-sm uppercase tracking-[0.3em] text-primary">Use Cases</p>
 				<h2 className="mb-4 text-4xl font-heading font-bold tracking-tighter md:text-5xl">
-					Built for teams selling creative workflows.
+					Built for teams that need this live in-market, not stuck in development.
 				</h2>
 				<p className="text-xl leading-relaxed text-muted-foreground">
-					When editing and rendering are part of your product or service, the fastest way to close revenue is to stop
-					building infrastructure and start shipping workflows customers will actually pay for.
+					When editing and rendering are part of your product or service, the fastest route to revenue is to stop
+					building infrastructure and start shipping the workflow customers are already asking for.
 				</p>
 			</div>
 

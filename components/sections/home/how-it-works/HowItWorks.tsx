@@ -3,19 +3,19 @@ const steps = [
 		number: "01",
 		title: "Embed the product surface",
 		description:
-			"Use the SDK to add the editor, timeline, or specific creation modules inside your existing app.",
+			"Use the SDK to add the editor, timeline, or specific creation modules inside your existing app without rebuilding your product shell.",
 	},
 	{
 		number: "02",
 		title: "Connect templates and workflows",
 		description:
-			"Define templates, variables, assets, permissions, and automations around the workflow you want to launch first.",
+			"Define templates, variables, assets, permissions, and automations around the first workflow you want customers using.",
 	},
 	{
 		number: "03",
 		title: "Render, search, and scale",
 		description:
-			"Run background exports, semantic search, and AI-assisted generation through the same production-ready infrastructure.",
+			"Run background exports, semantic search, and AI-assisted generation through the same production-ready infrastructure as adoption grows.",
 	},
 ];
 
@@ -28,8 +28,8 @@ export default function HowItWorks() {
 					From integration to launch in three steps.
 				</h2>
 				<p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-muted-foreground">
-					Start with the workflow that matters most now. Expand into a broader editing and automation platform as the
-					product grows.
+					Start with the workflow closest to revenue now. Expand into a broader editing and automation platform after
+					it is already live.
 				</p>
 			</div>
 

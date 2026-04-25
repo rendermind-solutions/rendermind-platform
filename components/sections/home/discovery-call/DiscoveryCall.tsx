@@ -9,30 +9,30 @@ export default function DiscoveryCall() {
 				<div>
 					<p className="mb-4 font-mono text-sm uppercase tracking-[0.3em] text-primary">Closing CTA</p>
 					<h2 className="text-4xl font-heading font-bold tracking-tighter md:text-5xl">
-						If media infrastructure is not your business, it should not eat your roadmap.
+						If media infrastructure is not your business, stop funding it like it is.
 					</h2>
 					<p className="mt-6 text-xl leading-relaxed text-muted-foreground">
-						We help teams ship the first workflow fast: the editor your users touch, the rendering pipeline behind it,
-						and the automation layer that makes it useful.
+						We help teams ship the first workflow fast: the editor users touch, the rendering pipeline behind it,
+						and the automation layer that makes the whole thing worth buying.
 					</p>
 
 					<div className="mt-10 space-y-4 border border-border/60 bg-card/40 p-6">
 						<div>
 							<p className="text-sm font-semibold text-foreground">What we cover in the first call</p>
 							<p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-								What to embed, what to render server-side, and the shortest path to a production launch.
+								What to embed, what to render server-side, and the shortest path to a launch customers can pay for.
 							</p>
 						</div>
 						<div>
 							<p className="text-sm font-semibold text-foreground">Best fit for</p>
 							<p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-								Startups, SaaS teams, AI builders, and agencies that want to ship creation workflows without building everything in-house.
+								Startups, SaaS teams, AI builders, and agencies that need to ship creation workflows without hiring a dedicated media infrastructure team.
 							</p>
 						</div>
 						<div>
 							<p className="text-sm font-semibold text-foreground">Integration style</p>
 							<p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-								API-first and SDK-ready, with modular pieces you can slot into an existing app.
+								API-first and SDK-ready, with modular pieces you can slot into an existing app and launch in stages.
 							</p>
 						</div>
 					</div>
@@ -63,11 +63,11 @@ export default function DiscoveryCall() {
 
 					<div className="space-y-2">
 						<label className="text-xs font-bold uppercase tracking-widest text-muted-foreground">What are you shipping?</label>
-						<Textarea
-							placeholder="Tell us the workflow you want to launch, the users you serve, and what is slowing the team down today."
-							className="min-h-[160px] resize-none border-border bg-background text-lg"
-						/>
-					</div>
+							<Textarea
+								placeholder="Tell us the workflow you want live, who will pay for it, and what is blocking launch right now."
+								className="min-h-[160px] resize-none border-border bg-background text-lg"
+							/>
+						</div>
 
 					<div className="flex flex-col gap-4 sm:flex-row">
 						<Button className="h-14 flex-1 text-lg font-bold">Book a demo</Button>

@@ -3,16 +3,16 @@ import { ArrowRight, Boxes, Code2, Sparkles } from "lucide-react";
 
 const highlights = [
 	{
-		title: "Ship faster",
-		description: "Launch creation workflows without spending a quarter on editor and render infrastructure.",
+		title: "Ship before the quarter ends",
+		description: "Turn a 6 to 12 month internal build into a faster path to launch and revenue.",
 	},
 	{
-		title: "Stay modular",
-		description: "Embed the editor, use the API, or start with templates and add more later.",
+		title: "Protect the roadmap",
+		description: "Stop pulling your team into editor bugs, render queues, and infrastructure work customers never see.",
 	},
 	{
-		title: "Keep control",
-		description: "Bring your own auth, data model, and product logic. Rendermind handles the media stack.",
+		title: "Win with product, not plumbing",
+		description: "Keep your UX, pricing, and workflow logic. We handle the media stack underneath it.",
 	},
 ];
 
@@ -30,15 +30,15 @@ export default function Hero() {
 					</div>
 
 					<h1 className="mb-8 text-5xl font-heading font-bold leading-[1.02] tracking-tighter md:text-7xl">
-						Add Canva and CapCut-style editing to your product in{" "}
+						Stop burning months on media infrastructure. Launch editing in{" "}
 						<span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary to-cyan-300">
 							weeks, not months.
 						</span>
 					</h1>
 
 					<p className="max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-2xl">
-						Rendermind gives your team an embeddable editor, a rendering API, and a template automation system
-						so you can launch image and video workflows without building the media stack from scratch.
+						Rendermind gives your team an embeddable editor, a rendering API, and template automation so you can
+						sell image and video workflows without hiring a team just to build and maintain them.
 					</p>
 
 					<div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -67,7 +67,7 @@ export default function Hero() {
 					<div className="flex items-center justify-between border-b border-border/60 pb-4">
 						<div>
 							<p className="font-mono text-xs uppercase tracking-[0.3em] text-primary">API + SDK Ready</p>
-							<h2 className="mt-2 text-2xl font-heading font-bold">Built to fit inside an existing product</h2>
+							<h2 className="mt-2 text-2xl font-heading font-bold">Built to plug into a real product fast</h2>
 						</div>
 						<div className="hidden h-12 w-12 items-center justify-center border border-primary/20 bg-primary/10 text-primary md:flex">
 							<Boxes size={20} />
@@ -102,17 +102,17 @@ await renderJob({
 						<div className="border border-border/60 bg-background/70 p-4">
 							<Code2 className="mb-3 text-primary" size={18} />
 							<p className="text-sm font-semibold">Composable SDK</p>
-							<p className="mt-2 text-sm leading-relaxed text-muted-foreground">Embed the whole editor or only the modules your product needs.</p>
+							<p className="mt-2 text-sm leading-relaxed text-muted-foreground">Embed the whole editor or only the modules that help you close the use case faster.</p>
 						</div>
 						<div className="border border-border/60 bg-background/70 p-4">
 							<Boxes className="mb-3 text-primary" size={18} />
 							<p className="text-sm font-semibold">Modular architecture</p>
-							<p className="mt-2 text-sm leading-relaxed text-muted-foreground">Keep your app shell, billing, permissions, and business logic in place.</p>
+							<p className="mt-2 text-sm leading-relaxed text-muted-foreground">Keep your app shell, billing, permissions, and business logic exactly where they already live.</p>
 						</div>
 						<div className="border border-border/60 bg-background/70 p-4">
 							<Sparkles className="mb-3 text-primary" size={18} />
 							<p className="text-sm font-semibold">AI-ready workflows</p>
-							<p className="mt-2 text-sm leading-relaxed text-muted-foreground">Connect prompts, templates, search, and rendering without bolting on separate tools.</p>
+							<p className="mt-2 text-sm leading-relaxed text-muted-foreground">Turn prompts, search, templates, and rendering into one workflow users will actually pay for.</p>
 						</div>
 					</div>
 				</div>

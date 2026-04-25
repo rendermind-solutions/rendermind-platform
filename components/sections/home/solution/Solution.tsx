@@ -5,10 +5,10 @@ const pillars = [
 		icon: <ImagePlay className="text-primary" size={20} />,
 		title: "Embeddable Editor",
 		description:
-			"Add image and video editing inside your product with a UI your team can shape around your workflow.",
+			"Add image and video editing inside your product without spending months rebuilding the basics.",
 		points: [
-			"Canvas and timeline experiences for real product use, not just demos",
-			"Embed the whole editor or only the modules you need",
+			"Canvas and timeline experiences built for paying users, not internal demos",
+			"Embed the full editor or only the modules needed for the first launch",
 			"Keep your own auth, billing, and product shell",
 		],
 	},
@@ -16,30 +16,30 @@ const pillars = [
 		icon: <Blocks className="text-primary" size={20} />,
 		title: "Rendering API",
 		description:
-			"Run exports, previews, thumbnails, and background jobs without owning the render pipeline yourself.",
+			"Run exports, previews, thumbnails, and background jobs without turning your team into render pipeline operators.",
 		points: [
 			"API-driven image and video rendering",
 			"Built for async jobs, retries, and scale",
-			"Fits products that need reliable output, not manual ops",
+			"Reliable output without manual ops in the middle",
 		],
 	},
 	{
 		icon: <Workflow className="text-primary" size={20} />,
 		title: "Templates + Automation System",
 		description:
-			"Turn repeatable content into templates your users, your team, or your AI workflows can fill automatically.",
+			"Turn repeatable content production into a system your users, team, or AI workflows can run automatically.",
 		points: [
-			"Brand-safe templates for repeated production",
+			"Brand-safe templates that reduce repetitive creative work",
 			"Bulk generation from forms, data, or prompts",
-			"Fewer manual steps between idea and export",
+			"Fewer manual steps between request and finished asset",
 		],
 	},
 ];
 
 const integrationNotes = [
-	"React-ready SDK for embedding product surfaces",
+	"React-ready SDK for fast product integration",
 	"API-first architecture for render jobs and automations",
-	"Modular rollout so you can start small and expand later",
+	"Modular rollout so you can ship one workflow first and expand later",
 ];
 
 export default function Solution() {
@@ -48,11 +48,11 @@ export default function Solution() {
 			<div className="max-w-3xl">
 				<p className="mb-4 font-mono text-sm uppercase tracking-[0.3em] text-primary">Solution</p>
 				<h2 className="text-4xl font-heading font-bold tracking-tighter md:text-5xl">
-					Three product modules. One faster path to launch.
+					Buy back months of engineering time with three product modules.
 				</h2>
 				<p className="mt-6 text-xl leading-relaxed text-muted-foreground">
-					Use the full stack or start with the one module blocking your roadmap today. Rendermind is designed to fit
-					into an existing app, not replace it.
+					Use the full stack or start with the module blocking revenue right now. Rendermind fits inside an existing
+					app so your team can move faster without a platform rewrite.
 				</p>
 			</div>
 
