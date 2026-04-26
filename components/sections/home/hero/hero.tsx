@@ -38,10 +38,9 @@ export default function Hero() {
 					</div>
 
 					<h1 className="mb-8 text-5xl font-heading font-bold leading-[1.02] tracking-tighter md:text-7xl">
-						Integrate custom image and video workflows without building the media stack from scratch.
-						{" "}
+						Integrate custom image and video workflows{" "}
 						<span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary to-cyan-300">
-							Built around reusable SDKs and custom integration.
+							without building the media stack from scratch.
 						</span>
 					</h1>
 
