@@ -77,7 +77,7 @@ export default function DiscoveryCall() {
 					</div>
 
 					<p className="text-sm font-light text-muted-foreground">
-						Response time is usually under 24 hours.
+						We&apos;ll reply with a few technical questions and, if there&apos;s a fit, schedule a discovery call.
 					</p>
 				</form>
 			</div>

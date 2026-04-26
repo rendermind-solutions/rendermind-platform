@@ -52,7 +52,7 @@ export default function Modules() {
 			<div className="max-w-3xl">
 				<p className="mb-4 font-mono text-sm uppercase tracking-[0.3em] text-primary">Available Modules</p>
 				<h2 className="text-4xl font-heading font-bold tracking-tighter md:text-5xl">
-					Concrete modules you can use today.
+					Concrete modules we can adapt and integrate today.
 				</h2>
 				<p className="mt-6 text-xl leading-relaxed text-muted-foreground">
 					The offer is intentionally specific: reusable editors, renderers, caption workflows, and AI extensions that

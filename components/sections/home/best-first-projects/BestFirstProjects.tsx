@@ -1,13 +1,30 @@
 import { Check } from "lucide-react";
 
 const projects = [
-	"Add a Canva-like editor to an existing SaaS product",
-	"Generate branded images, PDFs, or videos from templates",
-	"Build an internal creative tool for a marketing or content agency",
-	"Add captions and transcript workflows to a video product",
-	"Build a lightweight video editor for a specific product workflow",
-	"Prototype semantic search over video transcripts",
-	"Create a custom rendering pipeline for image or video assets",
+	{
+		title: "Canva-like editor for SaaS",
+		description: "Add a branded design editor inside your existing product.",
+	},
+	{
+		title: "Template rendering pipeline",
+		description: "Generate images, PDFs, or videos from structured templates and business data.",
+	},
+	{
+		title: "Agency internal creative tool",
+		description: "Create repeatable workflows for client assets, revisions, captions, and exports.",
+	},
+	{
+		title: "Video captions workflow",
+		description: "Add transcription, multilingual captions, review, and rendering to a video product.",
+	},
+	{
+		title: "Lightweight video editor",
+		description: "Build a focused editor for a specific video workflow instead of a generic timeline tool.",
+	},
+	{
+		title: "Semantic transcript search",
+		description: "Prototype AI search over long-form videos, interviews, webinars, or media libraries.",
+	},
 ];
 
 export default function BestFirstProjects() {
@@ -27,11 +44,14 @@ export default function BestFirstProjects() {
 
 				<div className="mt-14 grid gap-4 md:grid-cols-2">
 					{projects.map((project) => (
-						<div key={project} className="flex gap-4 border border-border/60 bg-card/30 p-5">
+						<div key={project.title} className="flex gap-4 border border-border/60 bg-card/30 p-5">
 							<div className="mt-1 flex h-8 w-8 items-center justify-center border border-primary/20 bg-primary/10 text-primary">
 								<Check size={16} />
 							</div>
-							<p className="text-lg leading-relaxed text-foreground">{project}</p>
+							<div>
+								<h3 className="text-lg font-semibold text-foreground">{project.title}</h3>
+								<p className="mt-2 text-base leading-relaxed text-muted-foreground">{project.description}</p>
+							</div>
 						</div>
 					))}
 				</div>

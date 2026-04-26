@@ -34,11 +34,11 @@ export default function Hero() {
 				<div>
 					<div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-2 font-mono text-sm text-primary mb-8">
 						<Sparkles size={14} />
-						<span>Embedded media workflows for AI video, SaaS, and marketing teams</span>
+						<span>Embedded media workflows for AI video, SaaS, and marketing teams.</span>
 					</div>
 
 					<h1 className="mb-8 text-5xl font-heading font-bold leading-[1.02] tracking-tighter md:text-7xl">
-						Build custom image and video creation workflows without starting from scratch.
+						Integrate custom image and video workflows without building the media stack from scratch.
 						{" "}
 						<span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary to-cyan-300">
 							Built around reusable SDKs and custom integration.
@@ -46,8 +46,8 @@ export default function Hero() {
 					</h1>
 
 					<p className="max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-2xl">
-						Rendermind helps product teams integrate custom image and video editors, rendering pipelines, templates,
-						captions, and AI-ready media workflows using reusable SDKs and custom engineering.
+						Rendermind combines reusable SDKs with custom engineering so your team can launch editors, render
+						pipelines, captions, templates, and AI-ready workflows inside the product you already have.
 					</p>
 
 					<div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -91,7 +91,9 @@ export default function Hero() {
 							<span className="ml-2 font-mono text-xs text-muted-foreground">product-integration.ts</span>
 						</div>
 						<pre className="overflow-x-auto px-4 py-5 text-sm text-cyan-300">
-							<code>{`import { GraphicEditor, renderImageJob } from "@rendermind/sdk";
+							<code>{`import { GraphicEditor } from "@rendermind/editor";
+import { createImageRenderJob } from "@rendermind/image-renderer";
+import { createVideoRenderJob } from "@rendermind/video-renderer";
 
 <GraphicEditor
   templateId="promo-template"
@@ -99,10 +101,16 @@ export default function Hero() {
   onSave={saveDesign}
 />
 
-await renderImageJob({
+await createImageRenderJob({
   templateId: "promo-template",
   variables: campaignData,
   output: ["png", "pdf"],
+});
+
+await createVideoRenderJob({
+  compositionId: "launch-video",
+  variables: campaignData,
+  output: "mp4",
 });`}</code>
 						</pre>
 					</div>
