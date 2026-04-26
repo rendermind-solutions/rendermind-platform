@@ -30,7 +30,7 @@ const pillars = [
       "Transcription, captions, semantic transcript search, and prompt-to-template workflows can be added where they make sense.",
     points: [
       "Multilingual transcription and caption generation",
-      "Semantic video search as an early module or custom AI extension",
+      "Semantic video search as custom AI extension",
       "Prompt, template, review, and render flows built around your product logic",
     ],
   },
