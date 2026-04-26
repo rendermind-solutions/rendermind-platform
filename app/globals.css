@@ -46,45 +46,35 @@
 }
 
 :root {
-  /* Rendermind High-Tech Palette */
-  --background: oklch(0.12 0.01 222);
-  /* #0B0E14 - Deep Obsidian */
-  --foreground: oklch(0.95 0.01 222);
-  /* #F1F1F1 - Ghost White */
+  --background: oklch(0.145 0.012 222);
+  --foreground: oklch(0.96 0.008 222);
 
-  --card: oklch(0.15 0.02 222);
-  /* #0D1117 - Card Background */
-  --card-foreground: oklch(0.95 0.01 222);
+  --card: oklch(0.18 0.018 222);
+  --card-foreground: oklch(0.96 0.008 222);
 
-  --popover: oklch(0.12 0.01 222);
-  --popover-foreground: oklch(0.95 0.01 222);
+  --popover: oklch(0.15 0.012 222);
+  --popover-foreground: oklch(0.96 0.008 222);
 
-  --primary: oklch(0.85 0.22 195);
-  /* #00F5FF - Electric Cyan */
-  --primary-foreground: oklch(0.12 0.01 222);
+  --primary: oklch(0.84 0.20 195);
+  --primary-foreground: oklch(0.11 0.012 222);
 
-  --secondary: oklch(0.25 0.02 222);
-  /* #1E2228 - Accent Slate */
-  --secondary-foreground: oklch(0.95 0.01 222);
+  --secondary: oklch(0.25 0.018 222);
+  --secondary-foreground: oklch(0.94 0.008 222);
 
-  --muted: oklch(0.2 0.02 222);
-  --muted-foreground: oklch(0.75 0.01 222);
-  /* Subimos de 0.65 a 0.75 */
-  /* #8E949E - Tech Silver */
+  --muted: oklch(0.22 0.018 222);
+  --muted-foreground: oklch(0.78 0.012 222);
 
-  --accent: oklch(0.25 0.05 195);
-  /* Darker Cyan for accents */
-  --accent-foreground: oklch(0.85 0.22 195);
+  --accent: oklch(0.24 0.05 195);
+  --accent-foreground: oklch(0.78 0.16 195);
 
   --destructive: oklch(0.55 0.18 25);
   --destructive-foreground: oklch(0.95 0.01 222);
 
-  --border: oklch(0.22 0.02 222);
-  /* Subtle UI borders */
-  --input: oklch(0.22 0.02 222);
-  --ring: oklch(0.85 0.22 195);
+  --border: oklch(0.28 0.018 222);
+  --input: oklch(0.25 0.018 222);
+  --ring: oklch(0.84 0.20 195);
 
-  --radius: 0.25rem;
+  --radius: 0.5rem;
 
   --sidebar: oklch(0.14 0.02 222);
   --sidebar-foreground: oklch(0.95 0.01 222);
@@ -96,11 +86,10 @@
   --sidebar-ring: oklch(0.85 0.22 195);
 }
 
-/* Forzamos que el .dark sea idéntico o ligeramente más profundo */
 .dark {
-  --background: oklch(0.1 0.01 222);
-  --card: oklch(0.13 0.02 222);
-  --border: oklch(0.18 0.02 222);
+  --background: oklch(0.13 0.012 222);
+  --card: oklch(0.17 0.018 222);
+  --border: oklch(0.26 0.018 222);
 }
 
 @layer base {
@@ -108,11 +97,16 @@
     @apply border-border outline-ring/50;
   }
 
+  html {
+    @apply scroll-smooth;
+  }
+
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    /* Técnica de Grid Pattern del Manual */
-    background-image: radial-gradient(oklch(0.22 0.02 222) 1px, transparent 1px);
-    background-size: 32px 32px;
+    background-image:
+      radial-gradient(circle at 50% -10%, oklch(0.84 0.2 195 / 0.12), transparent 36rem),
+      radial-gradient(oklch(0.28 0.018 222 / 0.42) 1px, transparent 1px);
+    background-size: auto, 32px 32px;
   }
 
   h1,
@@ -129,6 +123,68 @@
   }
 }
 
+@layer components {
+  .rm-container {
+    @apply mx-auto max-w-7xl px-6;
+  }
+
+  .rm-section {
+    @apply py-20 md:py-28 lg:py-32;
+  }
+
+  .rm-section-muted {
+    @apply border-y border-border/60 bg-secondary/15;
+  }
+
+  .rm-section-glow {
+    background:
+      radial-gradient(circle at 85% 10%, oklch(0.84 0.20 195 / 0.10), transparent 24rem),
+      linear-gradient(180deg, oklch(0.18 0.018 222 / 0.58), oklch(0.145 0.012 222 / 0.58));
+  }
+
+  .rm-eyebrow {
+    @apply mb-4 font-mono text-xs font-medium uppercase text-primary/85;
+    letter-spacing: 0.22em;
+  }
+
+  .rm-heading {
+    @apply text-4xl font-heading font-bold md:text-5xl;
+    line-height: 1.03;
+    letter-spacing: -0.045em;
+  }
+
+  .rm-lead {
+    @apply text-lg leading-relaxed text-muted-foreground md:text-xl;
+  }
+
+  .rm-card {
+    @apply rounded-xl border border-border/70 bg-card/50 p-6 backdrop-blur-sm md:p-8;
+    box-shadow: 0 18px 70px rgb(0 0 0 / 0.22);
+  }
+
+  .rm-card-compact {
+    @apply rounded-xl border border-border/70 bg-card/45 p-5 backdrop-blur-sm;
+    box-shadow: 0 14px 50px rgb(0 0 0 / 0.18);
+  }
+
+  .rm-card-hover {
+    @apply transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/35 hover:bg-card/70;
+  }
+
+  .rm-icon {
+    @apply flex h-12 w-12 items-center justify-center rounded-lg border border-primary/20 bg-primary/10 text-primary;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.04);
+  }
+
+  .rm-badge {
+    @apply rounded-full border border-border/70 bg-background/70 px-3 py-2 font-mono text-xs text-muted-foreground;
+  }
+
+  .rm-divider {
+    @apply h-px bg-gradient-to-r from-transparent via-border to-transparent;
+  }
+}
+
 @layer utilities {
   @keyframes infinite-scroll {
     from {
@@ -142,5 +198,11 @@
 
   .animate-infinite-scroll {
     animation: infinite-scroll 40s linear infinite;
+  }
+}
+
+@layer components {
+  .rm-card-hover:hover {
+    box-shadow: 0 22px 80px rgb(0 0 0 / 0.28);
   }
 }

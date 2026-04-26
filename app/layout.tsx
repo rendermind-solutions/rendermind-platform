@@ -21,7 +21,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Rendermind | Embedded Editing and Rendering Infrastructure",
   description:
-    "Add Canva and CapCut-style editing, rendering, templates, and AI workflows to your SaaS product in weeks instead of months.",
+    "Integrate custom image and video editors, rendering pipelines, captions, templates, and AI-ready workflows using reusable SDKs and custom engineering.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
